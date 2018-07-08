@@ -31,22 +31,36 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions "tier"
+    productFlavors {
+        free {
+            applicationId "com.udacity.gradle.builditbigger.flavors.free"
+        }
+        paid {
+            applicationId "com.udacity.gradle.builditbigger.flavors.paid"
+        }
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     endpointsServer project(path: ':backend', configuration: 'endpoints')
     implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.google.android.gms:play-services-ads:11.8.0'
+    implementation 'com.android.support:support-annotations:27.1.1'
+    freeImplementation 'com.google.android.gms:play-services-ads:15.0.1'
     implementation 'com.google.api-client:google-api-client:1.23.0'
     implementation 'com.google.http-client:google-http-client-android:1.23.0'
     implementation 'com.google.code.findbugs:jsr305:3.0.1'
     implementation project(':jokesJavaLib')
     implementation project(':jokesdisplaylib')
+    implementation 'com.android.support.test.espresso:espresso-idling-resource:3.0.2'
 
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
 
     testImplementation 'junit:junit:4.12'
 }

@@ -1,27 +1,8 @@
 Warning: Google App Engine Java 7 runtime is deprecated.
 Warning: See https://cloud.google.com/appengine/docs/deprecations/java7
-juil. 07, 2018 2:37:11 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+juil. 08, 2018 12:48:28 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
 INFOS: Overwriting system property key 'java.util.logging.config.file', value 'C:\Users\snakegear\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\snakegear\Documents\Work\buildItBigger\buildItBigger\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
-juil. 07, 2018 2:37:11 PM com.google.apphosting.utils.jetty.JettyLogger info
-INFOS: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
-juil. 07, 2018 12:37:12 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
-AVERTISSEMENT: Your working directory, (C:\Users\snakegear\Documents\Work\buildItBigger\buildItBigger\backend) is not equal to your 
-web application root (C:\Users\snakegear\Documents\Work\buildItBigger\buildItBigger\backend\build\exploded-backend)
-You will not be able to access files from your working directory on the production server.
 
-juil. 07, 2018 12:37:13 PM com.google.apphosting.utils.jetty.JettyLogger info
-INFOS: jetty-6.1.x
-juil. 07, 2018 12:37:18 PM com.google.apphosting.utils.jetty.JettyLogger info
-INFOS: Started SelectChannelConnector@localhost:8080
-juil. 07, 2018 12:37:18 PM com.google.appengine.tools.development.AbstractModule startup
-INFOS: Module instance default is running at http://localhost:8080/
-juil. 07, 2018 12:37:18 PM com.google.appengine.tools.development.AbstractModule startup
-INFOS: The admin console is running at http://localhost:8080/_ah/admin
-juil. 07, 2018 2:37:18 PM com.google.appengine.tools.development.DevAppServerImpl doStart
-INFOS: Dev App Server is now running
-juil. 07, 2018 2:39:18 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeByteBufferOperations
-AVERTISSEMENT: platform method missing - proto runtime falling back to safer methods: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.misc")
-juil. 07, 2018 2:39:18 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeArrayOperations
-AVERTISSEMENT: platform method missing - proto runtime falling back to safer methods: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.misc")
-juil. 07, 2018 2:39:21 PM com.google.appengine.tools.development.LocalResourceFileServlet doGet
-AVERTISSEMENT: No file found for: /favicon.ico
+************************************************
+Could not open the requested socket: Address already in use: bind
+Try overriding --address and/or --port.
